@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.MyAccount.data-v-0d9846ec {
+  width: 100%;
+  background: #f7f7f7;
+  padding-bottom: 100rpx;
+}
+.MyAccount .MyAccount-eye.data-v-0d9846ec {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  justify-content: space-between;
+}
+.MyAccount .MyAccount-eye .MyAccount-eye-image.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.MyAccount .MyAccount-eye .MyAccount-eye-image image.data-v-0d9846ec {
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 10rpx;
+}
+.MyAccount .MyAccount-card.data-v-0d9846ec {
+  width: 95%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  padding: 30rpx 0;
+}
+.MyAccount .MyAccount-card .card-box.data-v-0d9846ec {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.MyAccount .MyAccount-card .card-box .card-image.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+}
+.MyAccount .MyAccount-card .card-box .card-image image.data-v-0d9846ec {
+  width: 240rpx;
+  height: 150rpx;
+}
+.MyAccount .MyAccount-card .card-box .card-text.data-v-0d9846ec {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+}
+.MyAccount .MyAccount-card .card-box .card-text ._p.data-v-0d9846ec {
+  color: #888;
+  font-size: 28rpx;
+}
+.MyAccount .MyAccount-card .card-box .card-text ._span.data-v-0d9846ec {
+  margin-right: 20rpx;
+}
+.MyAccount .MyAccount-card .card-box .card-text text.data-v-0d9846ec {
+  color: #006ae9;
+  font-size: 25rpx;
+}
+.MyAccount .MyAccount-card .card-box .card-icon.data-v-0d9846ec {
+  padding: 15rpx 0rpx;
+  display: flex;
+}
+.MyAccount .MyAccount-card .card-box .card-icon image.data-v-0d9846ec {
+  width: 70rpx;
+  height: 70rpx;
+}
+.MyAccount .MyAccount-card .card-date.data-v-0d9846ec {
+  width: 90%;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+}
+.MyAccount .MyAccount-card .card-date ._span.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.MyAccount .MyAccount-card .card-date ._span image.data-v-0d9846ec {
+  width: 50rpx;
+  height: 50rpx;
+}
+.MyAccount .MyAccount-card .card-list.data-v-0d9846ec {
+  width: 90%;
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.MyAccount .MyAccount-card .card-list .card-list-text.data-v-0d9846ec {
+  width: 20%;
+  height: 25rpx;
+  font-size: 28rpx;
+  color: #6685fd;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  margin: 40rpx 0;
+  padding-right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MyAccount .MyAccount-card .card-icon.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.MyAccount .MyAccount-card .card-icon image.data-v-0d9846ec {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.MyAccount .MyAccount-Notice.data-v-0d9846ec {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20rpx 0;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.MyAccount .MyAccount-Notice .MyAccount-Notice-text.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.MyAccount .MyAccount-Notice .MyAccount-Notice-text image.data-v-0d9846ec {
+  width: 20rpx;
+  height: 20rpx;
+  padding: 0 20rpx;
+}
+.MyAccount .MyAccount-Notice .MyAccount-Notice-icon.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.MyAccount .MyAccount-Notice .MyAccount-Notice-icon image.data-v-0d9846ec {
+  width: 50rpx;
+  height: 50rpx;
+  padding-right: 20rpx;
+}
+.MyAccount .Add-MyAccount.data-v-0d9846ec {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx 0;
+  margin-top: 50rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+.MyAccount .Add-MyAccount image.data-v-0d9846ec {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+.MyAccount .MyAccount-list-icon.data-v-0d9846ec {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+  border-radius: 10rpx;
+  justify-content: space-evenly;
+}
+.MyAccount .MyAccount-list-icon .MyAccount-list-icon-box.data-v-0d9846ec {
+  width: 25%;
+  padding: 40rpx 0;
+  font-size: 25rpx;
+}
+.MyAccount .MyAccount-list-icon .MyAccount-list-icon-box .MyAccount-list-icon-box-image.data-v-0d9846ec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MyAccount .MyAccount-list-icon .MyAccount-list-icon-box .MyAccount-list-icon-box-image image.data-v-0d9846ec {
+  width: 60rpx;
+  height: 50rpx;
+}
+.MyAccount .MyAccount-list-icon .MyAccount-list-icon-box text.data-v-0d9846ec {
+  margin-top: 5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MyAccount .MyAccount-footer-text.data-v-0d9846ec {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 25rpx;
+  color: #929192;
+  line-height: 40rpx;
+  margin-top: 40rpx;
+}
+.MyAccount .MyAccount-footer-text .title.data-v-0d9846ec {
+  color: #92979d;
+  margin: 10rpx auto;
+}
+.MyAccount .MyAccount-footer-text ._span.data-v-0d9846ec {
+  color: #2a69b2;
+}
+

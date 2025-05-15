@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "title-box": "/components/Title-box",
+    "footer-box": "/components/footer-box"
+  }
+}

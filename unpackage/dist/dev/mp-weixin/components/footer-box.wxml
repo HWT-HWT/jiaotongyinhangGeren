@@ -1,0 +1,1 @@
+<view class="user-footer-box data-v-05b48594" style="{{'background:'+(backGroundUrl)+';'+('background-size:'+('100% 100%')+';')}}"><view class="user-footer-box-title data-v-05b48594">{{''+FooterTitle+''}}</view><slot></slot></view>

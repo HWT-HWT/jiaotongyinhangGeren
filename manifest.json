@@ -1,9 +1,9 @@
 {
-    "name" : "jiaotongyinhang",
+    "name" : "交通银行",
     "appid" : "__UNI__D062B3C",
     "description" : "",
     "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "versionCode" : "1",
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -41,7 +41,9 @@
                 ]
             },
             /* ios打包配置 */
-            "ios" : {},
+            "ios" : {
+                "dSYMs" : false
+            },
             /* SDK配置 */
             "sdkConfigs" : {}
         }

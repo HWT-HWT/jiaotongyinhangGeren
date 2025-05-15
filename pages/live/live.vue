@@ -5,6 +5,7 @@
 				
 			</view>
 			
+			
 			<view class="TaberTitle">
 				<view class="title-text">
 					<image src="@/static/wz.png" mode=""></image>广州	
@@ -342,14 +343,14 @@
 				}
 				.left-tow{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-13.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
 				}
 				.left-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-15.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
@@ -360,7 +361,7 @@
 				height: 100%;
 				.rigth-one{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-11.png')no-repeat;
 					background-size: 100% 100%;
 				}
@@ -373,7 +374,7 @@
 				}
 				.rigth-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-16.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;

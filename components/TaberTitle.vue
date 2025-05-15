@@ -1,8 +1,12 @@
 <template>
 	<view class="TaberTitle">
-		<view class="title-text">
+		<view class="title-text" @click="quit" v-if="!isTrue">
 			<slot></slot>
 		</view>
+		<view class="title-text" v-else>
+			<slot></slot>
+		</view>
+		
 		<view class="title-input">
 			
 			<view class="input">
@@ -28,14 +32,41 @@
 		name:"TaberTitle",
 		data() {
 			return {
-				
+				token:''
 			};
 		},
 		props:{
 			TaberTitle:{
 				type:Array
+			},
+			isTrue:{
+				type:Boolean
 			}
 		},
+		methods:{
+			quit(){
+				if(this.token){
+					uni.showToast({
+						title:'退出登录',
+						icon:'none',
+						duration:2000
+					})
+					uni.removeStorageSync('account')
+					setTimeout(()=>{
+						uni.reLaunch({
+							url:'/pages/login/login'
+						})
+					},1000)
+				}else{
+					uni.reLaunch({
+						url:'/pages/login/login'
+					})
+				}
+			}
+		},
+		created() {
+			this.token = uni.getStorageSync('account')
+		}
 	}
 </script>
 

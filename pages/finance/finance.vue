@@ -2,7 +2,9 @@
 	<view class="finance">
 		<view class="title">
 			<occupy></occupy>
-			<TaberTitle :TaberTitle='TaberTitle'>持仓</TaberTitle>
+			<TaberTitle :TaberTitle='TaberTitle' :isTrue='true'>
+					<slot>持仓</slot>
+			</TaberTitle>
 			<view class="TitleList">
 				<view class="TitleList-li">
 						<z-tabs :list="TitleList" tab-width='70' :barStyle='{"background":"#006ae9"}' active-color='#000' bg-color='none'></z-tabs>
@@ -412,7 +414,7 @@
 			}
 			.Optimal-list{
 				width: 90%;
-				border-bottom: 1px solid #ccc;	
+				border-bottom: 1px solid #ebebeb;	
 				margin: 0 auto;
 				padding-bottom: 20rpx;
 				display: flex;
@@ -586,14 +588,14 @@
 				}
 				.left-tow{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-13.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
 				}
 				.left-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-15.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
@@ -604,7 +606,7 @@
 				height: 100%;
 				.rigth-one{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-11.png')no-repeat;
 					background-size: 100% 100%;
 				}
@@ -617,7 +619,7 @@
 				}
 				.rigth-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-16.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;

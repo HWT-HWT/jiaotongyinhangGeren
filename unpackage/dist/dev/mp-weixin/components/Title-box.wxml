@@ -1,0 +1,1 @@
+<view class="Title-box data-v-1b70a30b"><view class="Title-li data-v-1b70a30b"><view class="Max data-v-1b70a30b"><label class="MaxTitle _span data-v-1b70a30b">{{MaxTitle}}</label><label class="miniTitle _span data-v-1b70a30b">{{miniTitle}}</label></view><label class="rigth _span data-v-1b70a30b">{{rigth}}</label></view><slot></slot></view>

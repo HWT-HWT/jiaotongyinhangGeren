@@ -33,6 +33,168 @@
 			{
 				"navigationBarTitleText" : ""
 			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/MyAccount/MyAccount",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的账户",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#000",
+								"fontSize": "40rpx",
+								"text": "\ue611",
+								"fontSrc": "static/fonts/iconfont.ttf"
+								
+							},
+							{
+								"color": "#000",
+								"fontSize": "55rpx",
+								"text": "\ue617",
+								"fontSrc": "static/fonts/iconfont.ttf"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/MyLoad/MyLoad",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的贷款"
+			}
+		},
+		{
+			"path" : "pages/OnlineLoans/OnlineLoans",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的线上抵押贷款",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path" : "pages/LoanDetails/LoanDetails",
+			"style" : 
+			{
+				"navigationBarTitleText" : "贷款详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path" : "pages/datalis/datalis",
+			"style" : 
+			{
+				"navigationBarTitleText" : "还款信息",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#1279ef",
+								"fontSize": "28rpx",
+								"text": "账单发送",
+								"width":"75px"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/MyAssets/MyAssets",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的资产"
+			}
+		},
+		{
+			"path" : "pages/MySaft/MySaft",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/TransactionDetails/TransactionDetails",
+			"style" : 
+			{
+				"navigationBarTitleText" : "交易明细",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#000",
+								"fontSize": "40rpx",
+								"text": "\ue611",
+								"fontSrc": "static/fonts/iconfont.ttf"
+								
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/TransferAccounts/TransferAccounts",
+			"style" : 
+			{
+				"navigationBarTitleText" : "转账",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#000",
+								"fontSize": "40rpx",
+								"text": "\ue611",
+								"fontSrc": "static/fonts/iconfont.ttf"
+								
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/FillTransfer/FillTransfer",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#000",
+								"fontSize": "40rpx",
+								"text": "\ue611",
+								"fontSrc": "static/fonts/iconfont.ttf"
+								
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/FundsTransfer/FundsTransfer",
+			"style" : 
+			{
+				"navigationBarTitleText" : "资金转入",
+				"navigationStyle": "default"
+			}
 		}
 	],
 	"globalStyle": {

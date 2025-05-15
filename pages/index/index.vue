@@ -6,8 +6,8 @@
 			</view>
 			
 			<view class="TaberTitle">
-				<view class="title-text">
-					登录
+				<view class="title-text" >
+					{{ token ? '退出' :'登录'}}
 				</view>
 				<view class="title-input">
 					<view class="icon">
@@ -27,8 +27,8 @@
 				</view>
 			</view>
 			
-			<view class="title-icon-btn">
-				<view class="title-icon-btn-box" v-for="(item,index) in TitleIcon" :key="index">
+			<view class="title-icon-btn" >
+				<view class="title-icon-btn-box" v-for="(item,index) in TitleIcon" :key="index" @click="GoMyAccount(index)">
 					<view class="title-icon-btn-box-icon">
 						<image class="title-icon-btn-box-image" :src="`../../static/ico_test${index+1}.webp`" mode=""></image>
 					</view>
@@ -39,8 +39,8 @@
 			</view>	
 		</view>
 		
-		<view class="list-btn">
-			<view class="list-btn-box" v-for="(item,index) in listBtn" :key="index">
+		<view class="list-btn" >
+			<view class="list-btn-box" v-for="(item,index) in listBtn" :key="index" @click="GoTransfer(index)">
 				<view class="list-btn-box-icon">
 					<image class="list-btn-box-image" :src="`../../static/list-btn-${index}.png`" mode=""></image>
 				</view>
@@ -210,7 +210,7 @@
 			</view>
 		</TitleBox>
 	
-		<TitleBox :MaxTitle="'交薪通专区'" :miniTitle="''" :rigth="'更多'">
+		<TitleBox :MaxTitle="'交薪通专区'" :miniTitle="''" :rigth="'更多'" :quit='true'>
 			<view class="TitleBox-image-money">
 				<view class="Maximage">
 					<image src="@/static/titlebox-8.png" mode=""></image>
@@ -250,7 +250,11 @@
 		
 		<view class="title-top":style="{opacity:yc}">
 			<occupy></occupy>
-			<TaberTitle :TaberTitle='TaberTitle'>登录</TaberTitle>
+			<TaberTitle :TaberTitle='TaberTitle'>
+				<view>
+					{{ token ? '退出' :'登录'}}
+				</view>
+			</TaberTitle>
 		</view>
 	</view>
 </template>
@@ -260,6 +264,7 @@
 	import occupy from "@/components/occupy.vue"
 	import bannerSwiper from '../../components/bannerSwiper.vue'
 	import TitleBox from '../../components/Title-box.vue'
+	import {gologin} from '@/components/login.js'
 	export default {
 		data() {
 			return {
@@ -304,14 +309,24 @@
 					{url: '../../static/titlebox-19.png'},
 				],
 				titleTop:false,
-				yc:0
+				yc:0,
+				token:''
+				
 			}
 		},
-		onLoad() {
-			
+		created() {
+			this.token = uni.getStorageSync('account') || ''
 		},
-		methods: {
-			 
+		methods:{
+			GoMyAccount(index){
+				console.log(index);
+				index === 0 ? gologin('/pages/MyAccount/MyAccount'):''
+				index === 1 ? gologin('/pages/MyAssets/MyAssets'):''
+				index === 2 ? gologin('/pages/MySaft/MySaft'):''
+			},
+			GoTransfer(index){
+				index === 1 ?  gologin('/pages/TransferAccounts/TransferAccounts'):''
+			}
 		},
 		onPageScroll(res){
 			this.yc = res.scrollTop/100
@@ -585,7 +600,7 @@
 			}
 			.Optimal-list{
 				width: 90%;
-				border-bottom: 1px solid #ccc;	
+				border-bottom: 1px solid #ebebeb;	
 				margin: 0 auto;
 				padding: 20rpx;
 				display: flex;
@@ -678,7 +693,7 @@
 				
 				.load-list-li{
 					text-align: center;
-					border-right: 1px solid #ccc;
+					border-right: 1px solid #ebebeb;
 					font-size: 30rpx;
 					display: flex;
 					flex-wrap:wrap;
@@ -733,7 +748,6 @@
 			margin-top: 30rpx;
 			padding-bottom: 20rpx;
 			display: flex;
-			// align-items: center;
 			justify-content: center;
 			.MaxImage{
 				width: 50%;
@@ -753,7 +767,7 @@
 				.icon-text-list{
 					width: 90%;
 					height: 20%;
-					border-bottom: 1rpx solid #ccc; 
+					border-bottom: 1rpx solid #ebebeb; 
 					display: flex;
 					padding: 30rpx 10rpx;
 					.icon{
@@ -827,14 +841,14 @@
 				}
 				.left-tow{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-13.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
 				}
 				.left-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-15.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;
@@ -845,7 +859,7 @@
 				height: 100%;
 				.rigth-one{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-11.png')no-repeat;
 					background-size: 100% 100%;
 				}
@@ -858,7 +872,7 @@
 				}
 				.rigth-therr{
 					width: 100%;
-					height: 450rpx;
+					height: 500rpx;
 					background: url('@/static/titlebox-16.png')no-repeat;
 					background-size: 100% 100%;
 					margin-top: 20rpx;

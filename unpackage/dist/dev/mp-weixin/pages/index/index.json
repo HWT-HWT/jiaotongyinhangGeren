@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "uni-tag": "/uni_modules/uni-tag/components/uni-tag/uni-tag",
+    "taber-title": "/components/TaberTitle",
+    "occupy": "/components/occupy",
+    "banner-swiper": "/components/bannerSwiper",
+    "title-box": "/components/Title-box"
+  }
+}

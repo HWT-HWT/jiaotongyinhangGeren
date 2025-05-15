@@ -1,0 +1,1 @@
+<view class="TowDiv data-v-9f50efa0"><view class="left data-v-9f50efa0"><slot name="left"></slot></view><view class="rigth data-v-9f50efa0"><slot name="rigth"></slot></view></view>
